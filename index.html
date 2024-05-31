@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="post">
+    <h1>FORMULARIO</h1>
+    <div><label for="nombre">Ingrese su nombre</label>
+      <input type="text" name="Nombre" required placeholder="Ingrese su nombre" id="nombre" autocomplete="off"
+        maxlength="20" minlength="2">
+    </div>
+    <br>
+    <div><label for="edad">Ingrese su edad</label>
+      <input type="number" name="Edad" id="edad" step="1" min="1" autocomplete="off" required>
+    </div>
+    <br>
+    <div>
+      <label for="correo">Escriba su correo electronico</label>
+      <input type="email" id="correo" name="Correo" required autocomplete="off">
+    </div>
+    <div>
+      <label for="radio">Seleccione su genero</label>
+      <label for="mascu">
+        <input type="radio" id="mascu" name="Genero" value="Masculino">
+        Masculino</label>
+      <label for="feme">
+        <input type="radio" id="feme" name="Genero" value="Femenino">Femenino</label>
+    </div>
+    <br>
+    <div>
+      <label for="colo">Elija su Color</label>
+      <input type="color" id="colo" name="Color">
+    </div>
+    <br>
+    <div>
+      <label for="ciudad">Seleecione su ciudad</label>
+      <select name="Ciudad" id="ciudad" required>
+        <option value="Bucaramanga" >Bucaramanga </option>
+        <option value="Giron" >Giron</option>
+        <option value="Floridablanca" >Floridablanca</option>
+        <option value="Piedecuesta" >Piedecuesta</option>
+      </select>
+    </div>
+    <br>
+    <div><label for="checkbox">Seleccione su chequeo</label>
+      <input type="checkbox" name="chequeo" value="chequeo 1">chequeo 1
+      <input type="checkbox" name="chequeo" value="chequeo 2" checked>chequeo 2
+      <input type="checkbox" name="chequeo" value="chequeo 3">chequeo 3
+    </div>
+    <br>
+    <div>
+      <input accept="image" type="file" multiple>
+    </div>
+    <br>
+    <button type="submit">Guardar</button>
+
+  </form>
+  
+</body>
+</html>
